@@ -11,9 +11,10 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+
 /**
  *
- * @author Dhia
+ * @author Nayrouz
  */
 public class DataSource {
     private String url="jdbc:mysql://127.0.0.1/foru_bd";
@@ -27,7 +28,7 @@ public class DataSource {
     private DataSource() {
         try {
             cnx=DriverManager.getConnection(url, login, pwd);
-            System.out.println("Connexion etablie");
+            System.out.println("Connexion");
         } catch (SQLException ex) {
             Logger.getLogger(DataSource.class.getName()).log(Level.SEVERE, null, ex);
         }
